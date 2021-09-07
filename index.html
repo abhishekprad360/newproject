@@ -1,0 +1,27 @@
+Jenkins
+
+    1  passwd root
+   
+    4  sudo yum update -y
+    5  sudo yum upgrade -y
+   11  yum install java -y
+   12  yum install java* -y
+   13  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
+   14  sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+   16  sudo amazon-linux-extras install epel
+   17   yum install epel-release
+   18  yum install java-11-openjdk-devel
+   19   yum install jenkins
+   21  systemctl start jenkins
+   22  systemctl enable jenkins
+   23  service jenkin status
+   24  service jenkins status
+
+
+Ansible
+
+       passwd root
+    4  yum install ansible -y
+    5   sudo amazon-linux-extras install ansible2
+    8  yum install ansible -y
+   11  nano  /etc/ansible/hosts
